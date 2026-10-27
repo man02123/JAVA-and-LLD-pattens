@@ -1,6 +1,6 @@
 package Concepts;
 
-public class CoreConcepts {
+public class CoreConcepts  implements pay{
 
     private String id;
     private String name;
@@ -10,6 +10,11 @@ public class CoreConcepts {
         this.id = id;
         this.name = name;
         this.orderStatus = orderStatus;
+    }
+
+    @Override
+    public void PayUsingMethod() {
+        System.out.println(" Payment Executed");
     }
 
     public String getId() {
